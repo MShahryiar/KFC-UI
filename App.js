@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from './screens/Home';
+import Menu from './screens/Menu';
+import Bucket from './screens/Bucket' ;
+import More from './screens/More';
 
 export default function App() {
+  // const Stack = createStackNavigator();
+  const Tab = createBottomTabNavigator();
   return (
-    <View style={styles.container}>
-      <Text>KFC App UI</Text>
-      <StatusBar style="auto" />
-    </View>
+   <NavigationContainer theme={DefaultTheme}>
+     <Tab.Navigator
+      screenOptions={{
+        headerShown:false,
+        tabBarLabelPosition:"beside-icon",
+        tabBarLabelStyle:{
+          fontWeight:"700",
+          fontSize:15
+        },
+        tabBarIconStyle:{display:"none"}
+        
+      }}
+      initialRouteName="Home">
+          <Tab.Screen name="Home" component={Home}/>
+          <Tab.Screen name="Menu" component={Menu} />
+          <Tab.Screen name="Bucket" component={Bucket} />
+          <Tab.Screen name="More" component={More} />
+     </Tab.Navigator>
+   </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
