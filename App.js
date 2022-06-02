@@ -1,4 +1,3 @@
-import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './screens/Home';
@@ -7,7 +6,6 @@ import Bucket from './screens/Bucket' ;
 import More from './screens/More';
 
 export default function App() {
-  // const Stack = createStackNavigator();
   const Tab = createBottomTabNavigator();
   return (
    <NavigationContainer theme={DefaultTheme}>
@@ -19,7 +17,11 @@ export default function App() {
           fontWeight:"700",
           fontSize:15
         },
-        tabBarIconStyle:{display:"none"}
+        tabBarIconStyle:{display:"none"},
+        tabBarActiveTintColor:'red',
+        tabBarInactiveTintColor:'grey',
+        tabBarActiveBackgroundColor:'white',
+
         
       }}
       initialRouteName="Home">

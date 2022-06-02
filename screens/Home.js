@@ -1,18 +1,33 @@
-import { View, Text, SafeAreaView } from 'react-native'
+import { View, Text, SafeAreaView, Image } from 'react-native'
 import React from 'react'
+import main from '../assets/main/top.jpg';
+import right from '../assets/main/right.png';
+import left from '../assets/main/left.jpg';
 
 const Home = () => {
   return (
-    <SafeAreaView style={{flex:1}}>
-    
-        <View style={{flex:1,justifyContent:'center', alignItems:'center', backgroundColor:'red'}}>
+    <SafeAreaView style={{flex:1}}>    
+        <View style={{flex:1,justifyContent:'center', alignItems:'center', backgroundColor:'white'}}>
          
-            <Text>Hello, Home</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
+        <View style={{flex:4, width:'100%'}}>
+          <Image
+            source={main}
+            style={{width:'100%', height:'100%', padding:20}}
+          />
+        </View>
+        <View style={{flex:2, flexDirection:'row', width:'100%'}}>
+        <View style={{flex:1, paddingHorizontal:10, paddingVertical:20}}>
+            <Image
+              source={left}
+              style={{width:'100%', height:'100%'}}/>
+          </View>
+          <View style={{flex:1, paddingHorizontal:10, paddingVertical:20}}>
+            <Image
+              source={right}
+              style={{width:'100%', height:'100%'}}/>
+          </View>
+
+        </View>         
          
         </View>
     </SafeAreaView>
