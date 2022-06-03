@@ -4,10 +4,12 @@ import Home from './screens/Home';
 import Menu from './screens/Menu';
 import Bucket from './screens/Bucket' ;
 import More from './screens/More';
+import {CartProvider} from './CartContext';
 
 export default function App() {
   const Tab = createBottomTabNavigator();
   return (
+    <CartProvider>
    <NavigationContainer theme={DefaultTheme}>
      <Tab.Navigator
       screenOptions={{
@@ -31,5 +33,6 @@ export default function App() {
           <Tab.Screen name="More" component={More} />
      </Tab.Navigator>
    </NavigationContainer>
+   </CartProvider>
   );
 }
