@@ -5,9 +5,9 @@ const Bucket = () => {
   return (
     <SafeAreaView style={{flex:1}}>
     
-        <View style={{flex:1,justifyContent:'center', alignItems:'center', backgroundColor:'red'}}>
+        <View style={{flex:1,justifyContent:'center', alignItems:'center'}}>
          
-            <Text>Hello Bucket</Text>
+            <Text>Hello, B</Text>
             <Text>Hello</Text>
             <Text>Hello</Text>
             <Text>Hello</Text>

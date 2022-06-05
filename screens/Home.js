@@ -9,9 +9,9 @@ import { useContext } from 'react';
 
 const Home = () => {
 
-  const {item} = useContext(CartContext);
-  const {addToCart} = useContext(CartContext);
-  const {items}  = useContext(CartContext);
+  // const {item} = useContext(CartContext);
+  // const {addToCart} = useContext(CartContext);
+  // const {items}  = useContext(CartContext);
 
   return (
     <SafeAreaView style={{flex:1}}>    
@@ -26,13 +26,6 @@ const Home = () => {
         </View>
         <View style={{flex:2, flexDirection:'row', width:'100%'}}>
         <View style={{flex:1, paddingHorizontal:10, paddingVertical:20}}>
-            {/* <TouchableOpacity
-                onPress={()=>addToCart('nuggets', '100', '2')}
-              // source={left}
-              // style={{width:'100%', height:'100%'}}
-              >
-                  <Text>Spicy Nuggets</Text>
-              </TouchableOpacity> */}
                <Image
               source={left}
               style={{width:'100%', height:'100%'}}/>
@@ -47,13 +40,20 @@ const Home = () => {
 
         </View>         
          
-        {/* <View >
-          <Text>CartContextValue Item : {item}, {items.map((foodie)=> (
-            <Text key={foodie}> {foodie.name} + {foodie.price} + {foodie.quantity} | </Text>
-          ))} </Text> 
-        </View> */}
     </SafeAreaView>
   )
 }
 
 export default Home
+{/* <TouchableOpacity
+onPress={()=>addToCart('nuggets', '100', '2')}
+// source={left}
+// style={{width:'100%', height:'100%'}}
+>
+<Text>Spicy Nuggets</Text>
+</TouchableOpacity> */}
+{/* <View >
+  <Text>CartContextValue Item : {item}, {items.map((foodie)=> (
+    <Text key={foodie}> {foodie.name} + {foodie.price} + {foodie.quantity} | </Text>
+  ))} </Text> 
+</View> */}
