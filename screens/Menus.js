@@ -4,34 +4,17 @@ import { Menu } from '../constants/data'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
 import EverydayValue from '../foodScreens/EverydayValue';
-
+import MenuHeader from '../components/MenuHeader';
 
 const Menus = () => {
   const navigation = useNavigation();
-  
-  const MenuHeader = () => {
-  
-    return(
-      <View 
-          style=
-                {{flexDirection:"row",
-                  flex:1,
-                  alignItems:'center',
-                  height:50, 
-                  paddingLeft:20,
-                  backgroundColor:'white',
-                  width:'100%',
-                  marginBottom:10,
-                }}>
-                <Text style={{fontWeight:'bold'}}>Menus</Text>
-      </View>
-    )
-  }
 
 
   return (
+   
     <SafeAreaView style={{flex:1}}> 
         <StatusBar/>   
+        <MenuHeader title="Menus"/>
     <View style={{flex:1, width:'100%',justifyContent:'center', alignItems:'center', backgroundColor:'lightgray'}}>
      
        
@@ -56,7 +39,7 @@ const Menus = () => {
             }
             keyExtractor={(item)=> item.id}
             showsVerticalScrollIndicator={false}
-            ListHeaderComponent={<MenuHeader />}
+            // ListHeaderComponent={<MenuHeader />}
             style={{
               width:'100%'
             }}
