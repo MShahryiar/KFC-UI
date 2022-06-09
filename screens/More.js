@@ -17,7 +17,7 @@ const More = () => {
       <TouchableOpacity><View style={{backgroundColor:'white', justifyContent:'center',margin:10,padding:40, paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Contact Us</Text></View></TouchableOpacity>
       </View>
       <View style={{width:'100%',flexDirection:'row',justifyContent:'space-evenly'}}>
-      <TouchableOpacity><View style={{backgroundColor:'white',justifyContent:'center',margin:10,padding:40 , paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Contact us</Text></View></TouchableOpacity>
+      <TouchableOpacity><View style={{backgroundColor:'white',justifyContent:'center',margin:10,padding:40 , paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Privacy policy</Text></View></TouchableOpacity>
       <TouchableOpacity><View style={{backgroundColor:'white', justifyContent:'center',margin:10,padding:40, paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Change Password</Text></View></TouchableOpacity>
       </View>
       <View style={{width:'100%',flexDirection:'row',justifyContent:'space-evenly'}}>
@@ -26,11 +26,7 @@ const More = () => {
       </View>
       <View style={{width:'100%',flexDirection:'row',justifyContent:'space-evenly'}}>
       <TouchableOpacity><View style={{backgroundColor:'white', justifyContent:'center',margin:10,padding:40 , paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Our Secret Recipe</Text></View></TouchableOpacity>
-      <TouchableOpacity><View style={{backgroundColor:'white', justifyContent:'center',margin:10,padding:40, paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Privacy policy</Text></View></TouchableOpacity>
       </View> 
-      <View style={{width:'100%'}}>
-      <TouchableOpacity><View style={{backgroundColor:'white', justifyContent:'center',margin:10,padding:40 , paddingHorizontal:80}}><Text style={{textAlign:'center'}}>Our Secret Recipe</Text></View></TouchableOpacity>
-      </View>     
     </View>
     <View style={{flex:1,backgroundColor:'lightgray', flexDirection:'row', justifyContent:'flex-end',alignItems:'center'}}>
       <View style={{flexDirection:'row'}}>
