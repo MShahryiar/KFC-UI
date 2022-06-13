@@ -11,7 +11,7 @@ const MenuHeader = (props) => {
                   width:'100%',
                   marginBottom:10                  
                 }}>
-                <Text style={{fontWeight:'bold'}}>{props.title}</Text>
+                <Text style={{}}>{props.title}</Text>
       </View>
     )
   }
